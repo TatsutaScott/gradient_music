@@ -1,0 +1,83 @@
+var buf;
+var samplerate;
+var points = [];
+
+function set_buffer(buffer_name) {
+  buf = new Buffer(buffer_name);
+  samplerate = buf.samplerate();
+  var samps = [];
+  for (var i = 0; i < buf.framecount(); i++) {
+    samps.push(0);
+  }
+  buf.poke(1, 0, samps);
+  points = [
+    [0, 0],
+    [buf.length(), 0],
+  ];
+}
+
+function reset_buffer() {
+  var pts = [];
+  for (var i = 0; i < buf.framecount(); i++) {
+    pts.push(0);
+  }
+  buf.poke(1, 0, pts);
+}
+
+function reset() {
+  points = [
+    [0, 0],
+    [buf.length(), 0],
+  ];
+  reset_buffer();
+}
+
+function set(t, a) {
+  buf.poke(1, msToSamps(t), a);
+}
+
+function addPoint(t, a) {
+  points.push([t, a]);
+  points.sort(sortPoints);
+  make();
+}
+
+function printPoints() {
+  for (var i = 0; i < points.length; i++) {
+    post(points[i][0], points[i][1]);
+  }
+}
+
+function sortPoints(a, b) {
+  return a[0] - b[0];
+}
+
+function make() {
+  reset_buffer();
+
+  for (var i = 0; i < points.length - 1; i++) {
+    var start_index = Math.floor(msToSamps(points[i][0]));
+    var start_val = points[i][1];
+    var end_index = Math.floor(msToSamps(points[i + 1][0]));
+    var end_val = points[i + 1][1];
+    var pts = [];
+    for (var q = start_index; q < end_index; q++) {
+      pts.push(map(q, start_index, end_index, start_val, end_val));
+    }
+    buf.poke(1, start_index, pts);
+  }
+}
+
+Buffer.prototype.samplerate = function () {
+  return (1000 * this.framecount()) / this.length();
+};
+
+function msToSamps(ms) {
+  return (ms * samplerate) / 1000;
+}
+
+function map(n, inputLo, inputHi, outputLo, outputHi) {
+  var inScale = (n - inputLo) / (inputHi - inputLo); // calculates where n sits in the input range and scales it to [0,1]
+  var outScale = outputHi - outputLo; // calculates the size of the output range
+  return inScale * outScale + outputLo; // multiplies the input ratio by the size of the output range
+}
