@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1468.0, 705.0 ],
+		"rect" : [ 34.0, 77.0, 1100.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,291 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-39",
+					"id" : "obj-86",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 345.0, 359.0, 139.0, 22.0 ],
-					"text" : "sho_FX_module.maxpat"
+					"patching_rect" : [ 650.0, 517.0, 113.0, 22.0 ],
+					"text" : "master_FX_module"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-85",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 856.0, 415.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-84",
+					"lastchannelcount" : 0,
+					"maxclass" : "live.gain~",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 356.0, 340.0, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~[4]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 3,
+							"parameter_shortname" : "live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~[4]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-83",
+					"lastchannelcount" : 0,
+					"maxclass" : "live.gain~",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 227.0, 340.0, 66.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~[3]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 3,
+							"parameter_shortname" : "live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~[3]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-82",
+					"lastchannelcount" : 0,
+					"maxclass" : "live.gain~",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 45.0, 340.0, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~[2]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 3,
+							"parameter_shortname" : "live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~[2]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-68",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 650.0, 268.0, 42.0, 22.0 ],
+					"text" : "r ends"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 552.0, 266.0, 28.0, 22.0 ],
+					"text" : "r ctl"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-70",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 356.0, 298.0, 313.0, 22.0 ],
+					"text" : "sho_FX_module"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1052.0, 266.0, 42.0, 22.0 ],
+					"text" : "r ends"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 954.0, 266.0, 28.0, 22.0 ],
+					"text" : "r ctl"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 758.0, 298.0, 313.0, 22.0 ],
+					"text" : "melody_FX_module"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 752.0, 200.0, 150.0, 20.0 ],
+					"text" : "MELODY ___________"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"lastchannelcount" : 0,
+					"maxclass" : "live.gain~",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 758.0, 340.0, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~[1]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 3,
+							"parameter_shortname" : "live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 856.0, 231.0, 52.0, 22.0 ],
+					"text" : "r chords"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 807.0, 231.0, 42.0, 22.0 ],
+					"text" : "r ends"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 758.0, 231.0, 28.0, 22.0 ],
+					"text" : "r ctl"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 758.0, 266.0, 117.0, 22.0 ],
+					"text" : "melody_module"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"channels" : 1,
+					"id" : "obj-14",
+					"lastchannelcount" : 0,
+					"maxclass" : "live.gain~",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 180.5, 340.0, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 3,
+							"parameter_shortname" : "live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~"
 				}
 
 			}
@@ -56,7 +334,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 138.0, 401.0, 45.0, 45.0 ]
+					"patching_rect" : [ 57.0, 638.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -379,14 +657,14 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 1 ],
+					"destination" : [ "obj-82", 1 ],
 					"source" : [ "obj-10", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
+					"destination" : [ "obj-82", 0 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -407,14 +685,44 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-39", 1 ],
+					"destination" : [ "obj-37", 1 ],
+					"order" : 0,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"order" : 1,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 2 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 1 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 1 ],
 					"source" : [ "obj-17", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
+					"destination" : [ "obj-70", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -449,31 +757,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 1 ],
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-83", 1 ],
 					"source" : [ "obj-21", 2 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
+					"destination" : [ "obj-83", 0 ],
 					"source" : [ "obj-21", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-37", 1 ],
-					"order" : 0,
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"order" : 1,
-					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -495,6 +794,45 @@
 				"patchline" : 				{
 					"destination" : [ "obj-21", 2 ],
 					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 1 ],
+					"order" : 1,
+					"source" : [ "obj-27", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"order" : 1,
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 1 ],
+					"order" : 0,
+					"source" : [ "obj-27", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 0 ],
+					"order" : 0,
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}
@@ -542,15 +880,57 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 1 ],
-					"source" : [ "obj-39", 1 ]
+					"destination" : [ "obj-27", 1 ],
+					"source" : [ "obj-41", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"source" : [ "obj-39", 0 ]
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 3 ],
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 2 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 1 ],
+					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 3 ],
+					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 2 ],
+					"source" : [ "obj-69", 0 ]
 				}
 
 			}
@@ -563,6 +943,130 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-84", 1 ],
+					"source" : [ "obj-70", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-84", 0 ],
+					"source" : [ "obj-70", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 1 ],
+					"order" : 1,
+					"source" : [ "obj-82", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"order" : 1,
+					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 1 ],
+					"order" : 0,
+					"source" : [ "obj-82", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 0 ],
+					"order" : 0,
+					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 1 ],
+					"order" : 1,
+					"source" : [ "obj-83", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"order" : 1,
+					"source" : [ "obj-83", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 1 ],
+					"order" : 0,
+					"source" : [ "obj-83", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 0 ],
+					"order" : 0,
+					"source" : [ "obj-83", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 1 ],
+					"order" : 1,
+					"source" : [ "obj-84", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"order" : 1,
+					"source" : [ "obj-84", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 1 ],
+					"order" : 0,
+					"source" : [ "obj-84", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 0 ],
+					"order" : 0,
+					"source" : [ "obj-84", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 1 ],
+					"source" : [ "obj-86", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-86", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"midpoints" : [ 123.5, 127.0, 92.5, 127.0 ],
 					"source" : [ "obj-9", 0 ]
@@ -570,10 +1074,49 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-14" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-27" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-82" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-83" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-84" : [ "live.gain~[4]", "live.gain~", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
 		"dependency_cache" : [ 			{
+				"name" : "AD.gendsp",
+				"bootpath" : "~/code/max/audio_utils/gen/envelopes",
+				"patcherrelativepath" : "../audio_utils/gen/envelopes",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FM_feedback.gendsp",
+				"bootpath" : "~/code/max/audio_utils/gen/synthesis",
+				"patcherrelativepath" : "../audio_utils/gen/synthesis",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "allpass.gendsp",
+				"bootpath" : "~/code/max/audio_utils/gen/filters",
+				"patcherrelativepath" : "../audio_utils/gen/filters",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "bass_module.maxpat",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/code/max/gradient_music/modules",
+				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -586,29 +1129,29 @@
 			}
 , 			{
 				"name" : "ctlinfo.maxpat",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/code/max/gradient_music/abstractions",
+				"patcherrelativepath" : "./abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "function_buffer",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/code/max/gradient_music/misc",
+				"patcherrelativepath" : "./misc",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "harmony_module.maxpat",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/code/max/gradient_music/modules",
+				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "list_interp.maxpat",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/code/max/gradient_music/abstractions",
+				"patcherrelativepath" : "./abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -620,6 +1163,27 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "master_FX_module.maxpat",
+				"bootpath" : "~/code/max/gradient_music/modules",
+				"patcherrelativepath" : "./modules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "melody_FX_module.maxpat",
+				"bootpath" : "~/code/max/gradient_music/modules",
+				"patcherrelativepath" : "./modules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "melody_module.maxpat",
+				"bootpath" : "~/code/max/gradient_music/modules",
+				"patcherrelativepath" : "./modules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "morph.gendsp",
 				"bootpath" : "~/code/max/audio_utils/gen/synthesis",
 				"patcherrelativepath" : "../audio_utils/gen/synthesis",
@@ -628,15 +1192,22 @@
 			}
 , 			{
 				"name" : "noise_module.maxpat",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/code/max/gradient_music/modules",
+				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "normalized_peek.gendsp",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/code/max/gradient_music/gen",
+				"patcherrelativepath" : "./gen",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "octave_fuzz.gendsp",
+				"bootpath" : "~/code/max/gradient_music/gen",
+				"patcherrelativepath" : "./gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
@@ -648,9 +1219,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "overdrive.gendsp",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"name" : "pitchshift.gendsp",
+				"bootpath" : "~/code/max/gradient_music/gen",
+				"patcherrelativepath" : "./gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
@@ -663,34 +1234,62 @@
 			}
 , 			{
 				"name" : "random_list.maxpat",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/code/max/gradient_music/abstractions",
+				"patcherrelativepath" : "./abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "shift_delay.gendsp",
+				"bootpath" : "~/code/max/gradient_music/gen",
+				"patcherrelativepath" : "./gen",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "sho_FX_module.maxpat",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/code/max/gradient_music/modules",
+				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sho_gen.gendsp",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/code/max/gradient_music/gen",
+				"patcherrelativepath" : "./gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sho_module.maxpat",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/code/max/gradient_music/modules",
+				"patcherrelativepath" : "./modules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "simple_FM_p.maxpat",
+				"bootpath" : "~/code/max/gradient_music/abstractions",
+				"patcherrelativepath" : "./abstractions",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "simple_poly.maxpat",
+				"bootpath" : "~/code/max/gradient_music/misc",
+				"patcherrelativepath" : "./misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "smooth.gendsp",
+				"bootpath" : "~/code/max/audio_utils/gen/utility",
+				"patcherrelativepath" : "../audio_utils/gen/utility",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "st_pan.gendsp",
 				"bootpath" : "~/code/max/audio_utils/gen/utility",
 				"patcherrelativepath" : "../audio_utils/gen/utility",
 				"type" : "gDSP",
@@ -705,15 +1304,22 @@
 			}
 , 			{
 				"name" : "stereo_chorus.gendsp",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/code/max/gradient_music/gen",
+				"patcherrelativepath" : "./gen",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "stereo_phaser.gendsp",
+				"bootpath" : "~/code/max/gradient_music/gen",
+				"patcherrelativepath" : "./gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "topology.maxpat",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/code/max/gradient_music/abstractions",
+				"patcherrelativepath" : "./abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -739,9 +1345,30 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "vel_ranges.txt",
+				"bootpath" : "~/code/max/gradient_music/misc",
+				"patcherrelativepath" : "./misc",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "xfade.gendsp",
+				"bootpath" : "~/code/max/audio_utils/gen/utility",
+				"patcherrelativepath" : "../audio_utils/gen/utility",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zl.splice.maxpat",
+				"bootpath" : "~/code/max/gradient_music/abstractions",
+				"patcherrelativepath" : "./abstractions",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "合竹.txt",
-				"bootpath" : "~/code/max/gradient_music",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/code/max/gradient_music/misc",
+				"patcherrelativepath" : "./misc",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
