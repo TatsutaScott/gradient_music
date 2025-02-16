@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1100.0, 705.0 ],
+		"rect" : [ 34.0, 77.0, 1468.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,24 +40,147 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-86",
-					"maxclass" : "newobj",
+					"id" : "obj-48",
+					"lastchannelcount" : 0,
+					"maxclass" : "live.gain~",
 					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 650.0, 517.0, 113.0, 22.0 ],
-					"text" : "master_FX_module"
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1147.0, 367.0, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~[5]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 3,
+							"parameter_shortname" : "live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~[5]"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-85",
+					"id" : "obj-47",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 856.0, 415.0, 100.0, 22.0 ]
+					"patching_rect" : [ 1512.0, 267.0, 52.0, 22.0 ],
+					"text" : "r chords"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1414.0, 267.0, 42.0, 22.0 ],
+					"text" : "r ends"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1316.0, 267.0, 28.0, 22.0 ],
+					"text" : "r ctl"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "newobj",
+					"numinlets" : 5,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 1120.0, 298.0, 411.0, 22.0 ],
+					"text" : "piano_FX_module"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1218.0, 235.0, 52.0, 22.0 ],
+					"text" : "r chords"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1169.0, 235.0, 42.0, 22.0 ],
+					"text" : "r ends"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1120.0, 235.0, 35.0, 22.0 ],
+					"text" : "r raw"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 21.0, 135.0, 37.0, 22.0 ],
+					"text" : "s raw"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 1120.0, 267.0, 117.0, 22.0 ],
+					"text" : "piano_module"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-86",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 603.0, 522.0, 113.0, 22.0 ],
+					"text" : "master_FX_module"
 				}
 
 			}
@@ -334,7 +457,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 57.0, 638.0, 45.0, 45.0 ]
+					"patching_rect" : [ 375.0, 661.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -413,7 +536,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 187.0, 17.0, 150.0, 20.0 ],
+					"patching_rect" : [ 224.5, 17.0, 150.0, 20.0 ],
 					"text" : "HARMONY ___________"
 				}
 
@@ -471,7 +594,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 205.0, 103.0, 54.0, 22.0 ],
+					"patching_rect" : [ 224.5, 103.0, 54.0, 22.0 ],
 					"text" : "s chords"
 				}
 
@@ -495,7 +618,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 287.0, 44.0, 42.0, 22.0 ],
+					"patching_rect" : [ 306.5, 44.0, 42.0, 22.0 ],
 					"text" : "r ends"
 				}
 
@@ -507,7 +630,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 205.0, 44.0, 28.0, 22.0 ],
+					"patching_rect" : [ 224.5, 44.0, 28.0, 22.0 ],
 					"text" : "r ctl"
 				}
 
@@ -519,7 +642,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 205.0, 73.0, 101.0, 22.0 ],
+					"patching_rect" : [ 224.5, 73.0, 101.0, 22.0 ],
 					"text" : "harmony_module"
 				}
 
@@ -579,7 +702,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 114.0, 99.0, 29.5, 22.0 ],
+					"patching_rect" : [ 136.5, 99.0, 29.5, 22.0 ],
 					"text" : "2"
 				}
 
@@ -591,7 +714,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 83.0, 99.0, 29.5, 22.0 ],
+					"patching_rect" : [ 98.0, 99.0, 29.5, 22.0 ],
 					"text" : "1"
 				}
 
@@ -602,7 +725,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.0, 135.0, 44.0, 22.0 ],
+					"patching_rect" : [ 98.0, 135.0, 44.0, 22.0 ],
 					"text" : "s ends"
 				}
 
@@ -613,7 +736,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 52.0, 135.0, 30.0, 22.0 ],
+					"patching_rect" : [ 59.5, 135.0, 30.0, 22.0 ],
 					"text" : "s ctl"
 				}
 
@@ -625,7 +748,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "int", "float", "bang", "bang", "float" ],
-					"patching_rect" : [ 21.0, 72.0, 143.0, 22.0 ],
+					"patching_rect" : [ 21.0, 72.0, 173.0, 22.0 ],
 					"text" : "ctlinfo"
 				}
 
@@ -646,9 +769,8 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "float" ],
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"patching_rect" : [ 610.0, 55.0, 54.0, 22.0 ],
 					"text" : "topology"
 				}
@@ -838,6 +960,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-3", 1 ]
 				}
@@ -859,6 +988,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 2 ],
 					"source" : [ "obj-31", 0 ]
 				}
@@ -875,6 +1011,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 2 ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 1 ],
+					"source" : [ "obj-39", 0 ]
 				}
 
 			}
@@ -903,6 +1053,73 @@
 				"patchline" : 				{
 					"destination" : [ "obj-41", 2 ],
 					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-48", 1 ],
+					"source" : [ "obj-44", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 3 ],
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 2 ],
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 4 ],
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 1 ],
+					"order" : 1,
+					"source" : [ "obj-48", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"order" : 1,
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 1 ],
+					"order" : 0,
+					"source" : [ "obj-48", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 0 ],
+					"order" : 0,
+					"source" : [ "obj-48", 0 ]
 				}
 
 			}
@@ -952,6 +1169,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-84", 0 ],
 					"source" : [ "obj-70", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 1 ],
+					"source" : [ "obj-8", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
@@ -1068,7 +1299,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 123.5, 127.0, 92.5, 127.0 ],
+					"midpoints" : [ 146.0, 127.0, 107.5, 127.0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -1077,6 +1308,7 @@
 		"parameters" : 		{
 			"obj-14" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-27" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-48" : [ "live.gain~[5]", "live.gain~", 0 ],
 			"obj-82" : [ "live.gain~[2]", "live.gain~", 0 ],
 			"obj-83" : [ "live.gain~[3]", "live.gain~", 0 ],
 			"obj-84" : [ "live.gain~[4]", "live.gain~", 0 ],
@@ -1094,280 +1326,308 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "AD.gendsp",
-				"bootpath" : "~/code/max/audio_utils/gen/envelopes",
+				"bootpath" : "~/code/audio/audio_utils/gen/envelopes",
 				"patcherrelativepath" : "../audio_utils/gen/envelopes",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FM_feedback.gendsp",
-				"bootpath" : "~/code/max/audio_utils/gen/synthesis",
-				"patcherrelativepath" : "../audio_utils/gen/synthesis",
+				"bootpath" : "~/code/max msp/assets/gen",
+				"patcherrelativepath" : "../../max msp/assets/gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "allpass.gendsp",
-				"bootpath" : "~/code/max/audio_utils/gen/filters",
+				"bootpath" : "~/code/audio/audio_utils/gen/filters",
 				"patcherrelativepath" : "../audio_utils/gen/filters",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bass_module.maxpat",
-				"bootpath" : "~/code/max/gradient_music/modules",
+				"bootpath" : "~/code/audio/gradient_music/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cross.gendsp",
-				"bootpath" : "~/code/max/audio_utils/gen/filters",
+				"bootpath" : "~/code/audio/audio_utils/gen/filters",
 				"patcherrelativepath" : "../audio_utils/gen/filters",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ctlinfo.maxpat",
-				"bootpath" : "~/code/max/gradient_music/abstractions",
+				"bootpath" : "~/code/audio/gradient_music/abstractions",
 				"patcherrelativepath" : "./abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "function_buffer",
-				"bootpath" : "~/code/max/gradient_music/misc",
-				"patcherrelativepath" : "./misc",
+				"name" : "harmony4Max.js",
+				"bootpath" : "~/code/max msp/js/node",
+				"patcherrelativepath" : "../../max msp/js/node",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "harmony_module.maxpat",
-				"bootpath" : "~/code/max/gradient_music/modules",
+				"bootpath" : "~/code/audio/gradient_music/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "list.interp.maxpat",
+				"bootpath" : "~/code/audio/audio_utils/abstractions/list",
+				"patcherrelativepath" : "../audio_utils/abstractions/list",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "list.random.maxpat",
+				"bootpath" : "~/code/audio/audio_utils/abstractions/list",
+				"patcherrelativepath" : "../audio_utils/abstractions/list",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "list_interp.maxpat",
-				"bootpath" : "~/code/max/gradient_music/abstractions",
+				"bootpath" : "~/code/audio/gradient_music/abstractions",
 				"patcherrelativepath" : "./abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "loop_delay.gendsp",
+				"bootpath" : "~/code/audio/audio_utils/gen/effects",
+				"patcherrelativepath" : "../audio_utils/gen/effects",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "lores.gendsp",
-				"bootpath" : "~/code/max/audio_utils/gen/filters",
+				"bootpath" : "~/code/audio/audio_utils/gen/filters",
 				"patcherrelativepath" : "../audio_utils/gen/filters",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "master_FX_module.maxpat",
-				"bootpath" : "~/code/max/gradient_music/modules",
+				"bootpath" : "~/code/audio/gradient_music/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "melody_FX_module.maxpat",
-				"bootpath" : "~/code/max/gradient_music/modules",
+				"bootpath" : "~/code/audio/gradient_music/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "melody_module.maxpat",
-				"bootpath" : "~/code/max/gradient_music/modules",
+				"bootpath" : "~/code/audio/gradient_music/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "morph.gendsp",
-				"bootpath" : "~/code/max/audio_utils/gen/synthesis",
+				"bootpath" : "~/code/audio/audio_utils/gen/synthesis",
 				"patcherrelativepath" : "../audio_utils/gen/synthesis",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noise_module.maxpat",
-				"bootpath" : "~/code/max/gradient_music/modules",
+				"bootpath" : "~/code/audio/gradient_music/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "normalized_peek.gendsp",
-				"bootpath" : "~/code/max/gradient_music/gen",
-				"patcherrelativepath" : "./gen",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "octave_fuzz.gendsp",
-				"bootpath" : "~/code/max/gradient_music/gen",
+				"bootpath" : "~/code/audio/gradient_music/gen",
 				"patcherrelativepath" : "./gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "onepole.gendsp",
-				"bootpath" : "~/code/max/audio_utils/gen/filters",
+				"bootpath" : "~/code/audio/audio_utils/gen/filters",
 				"patcherrelativepath" : "../audio_utils/gen/filters",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "piano_FX_module.maxpat",
+				"bootpath" : "~/code/audio/gradient_music/modules",
+				"patcherrelativepath" : "./modules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "piano_module.maxpat",
+				"bootpath" : "~/code/audio/gradient_music/modules",
+				"patcherrelativepath" : "./modules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "pitchshift.gendsp",
-				"bootpath" : "~/code/max/gradient_music/gen",
+				"bootpath" : "~/code/audio/gradient_music/gen",
 				"patcherrelativepath" : "./gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ramp2trig.gendsp",
-				"bootpath" : "~/code/max/util/gen",
-				"patcherrelativepath" : "../util/gen",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "random_list.maxpat",
-				"bootpath" : "~/code/max/gradient_music/abstractions",
+				"bootpath" : "~/code/audio/gradient_music/abstractions",
 				"patcherrelativepath" : "./abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shift_delay.gendsp",
-				"bootpath" : "~/code/max/gradient_music/gen",
+				"bootpath" : "~/code/audio/gradient_music/gen",
 				"patcherrelativepath" : "./gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sho_FX_module.maxpat",
-				"bootpath" : "~/code/max/gradient_music/modules",
+				"bootpath" : "~/code/audio/gradient_music/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sho_gen.gendsp",
-				"bootpath" : "~/code/max/gradient_music/gen",
+				"bootpath" : "~/code/audio/gradient_music/gen",
 				"patcherrelativepath" : "./gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sho_module.maxpat",
-				"bootpath" : "~/code/max/gradient_music/modules",
+				"bootpath" : "~/code/audio/gradient_music/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "simple_FM_p.maxpat",
-				"bootpath" : "~/code/max/gradient_music/abstractions",
+				"bootpath" : "~/code/audio/gradient_music/abstractions",
 				"patcherrelativepath" : "./abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "simple_poly.maxpat",
-				"bootpath" : "~/code/max/gradient_music/misc",
+				"bootpath" : "~/code/audio/gradient_music/misc",
 				"patcherrelativepath" : "./misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "smooth.gendsp",
-				"bootpath" : "~/code/max/audio_utils/gen/utility",
+				"bootpath" : "~/code/audio/audio_utils/gen/utility",
 				"patcherrelativepath" : "../audio_utils/gen/utility",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "st_pan.gendsp",
-				"bootpath" : "~/code/max/audio_utils/gen/utility",
+				"bootpath" : "~/code/audio/audio_utils/gen/utility",
 				"patcherrelativepath" : "../audio_utils/gen/utility",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "st_stereoVerb.gendsp",
-				"bootpath" : "~/code/max/audio_utils/gen/effects",
+				"bootpath" : "~/code/audio/audio_utils/gen/effects",
 				"patcherrelativepath" : "../audio_utils/gen/effects",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "stereoPan.gendsp",
+				"bootpath" : "~/code/audio/audio_utils/gen/utility",
+				"patcherrelativepath" : "../audio_utils/gen/utility",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "stereo_chorus.gendsp",
-				"bootpath" : "~/code/max/gradient_music/gen",
+				"bootpath" : "~/code/audio/gradient_music/gen",
 				"patcherrelativepath" : "./gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stereo_phaser.gendsp",
-				"bootpath" : "~/code/max/gradient_music/gen",
+				"bootpath" : "~/code/audio/gradient_music/gen",
 				"patcherrelativepath" : "./gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "topology.maxpat",
-				"bootpath" : "~/code/max/gradient_music/abstractions",
-				"patcherrelativepath" : "./abstractions",
+				"bootpath" : "~/code/max msp",
+				"patcherrelativepath" : "../../max msp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "unit_pulse.gendsp",
-				"bootpath" : "~/code/max/util/gen",
-				"patcherrelativepath" : "../util/gen",
+				"name" : "tukey.gendsp",
+				"bootpath" : "~/code/audio/audio_utils/gen/windows",
+				"patcherrelativepath" : "../audio_utils/gen/windows",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "unit_sine.gendsp",
-				"bootpath" : "~/code/max/util/gen",
-				"patcherrelativepath" : "../util/gen",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "unit_triangle.gendsp",
-				"bootpath" : "~/code/max/util/gen",
-				"patcherrelativepath" : "../util/gen",
+				"name" : "varispeed_delay.gendsp",
+				"bootpath" : "~/code/audio/gradient_music/gen",
+				"patcherrelativepath" : "./gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vel_ranges.txt",
-				"bootpath" : "~/code/max/gradient_music/misc",
+				"bootpath" : "~/code/audio/gradient_music/misc",
 				"patcherrelativepath" : "./misc",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "xfade.gendsp",
-				"bootpath" : "~/code/max/audio_utils/gen/utility",
+				"bootpath" : "~/code/audio/audio_utils/gen/utility",
 				"patcherrelativepath" : "../audio_utils/gen/utility",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "zl.find.maxpat",
+				"bootpath" : "~/code/audio/gradient_music/abstractions",
+				"patcherrelativepath" : "./abstractions",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "zl.splice.maxpat",
-				"bootpath" : "~/code/max/gradient_music/abstractions",
+				"bootpath" : "~/code/audio/gradient_music/abstractions",
 				"patcherrelativepath" : "./abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "合竹.txt",
-				"bootpath" : "~/code/max/gradient_music/misc",
+				"bootpath" : "~/code/audio/gradient_music/misc",
 				"patcherrelativepath" : "./misc",
 				"type" : "TEXT",
 				"implicit" : 1
